@@ -6,8 +6,8 @@ const getApi = () => {
     .then((data) =>
       data.results.map((character) => {
         return {
-          image: character.image,
           name: character.name,
+          image: character.image,
           species: character.species,
           status: character.status,
           origin: character.origin.name,

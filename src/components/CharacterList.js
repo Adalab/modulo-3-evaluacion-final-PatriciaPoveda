@@ -16,9 +16,6 @@ const CharacterList = (props) => {
   });
   return (
     <>
-      <form action="">
-        <input type="" />
-      </form>
       <ul className="characterList">{newCharacter}</ul>
     </>
   );

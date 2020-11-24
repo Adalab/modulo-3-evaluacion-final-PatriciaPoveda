@@ -2,7 +2,6 @@ import React from "react";
 import "./characterCard.scss";
 
 const CharacterCard = (props) => {
-  console.log(props);
   return (
     <article className="characterCard">
       <img
