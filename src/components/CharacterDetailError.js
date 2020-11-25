@@ -6,7 +6,7 @@ import logo from "../images/homero-simpson-400x360.jpg";
 const CharacterDetailError = () => {
   return (
     <>
-      <Link to="/" className="characterDetailButton">
+      <Link to="/characters" className="characterDetailButton">
         Volver
       </Link>
       <article className="characterDetail">

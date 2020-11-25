@@ -1,9 +1,20 @@
 import React from "react";
 import CharacterCard from "./CharacterCard";
 import CharacterListError from "./CharacterListError";
+
 import "./characterList.scss";
 
 const CharacterList = (props) => {
+  props.characters.sort(function (a, b) {
+    if (a.name > b.name) {
+      return 1;
+    }
+    if (a.name < b.name) {
+      return -1;
+    }
+    return 0;
+  });
+
   const newCharacter = props.characters.map((character) => {
     return (
       <li key={character.id} id={character.id}>

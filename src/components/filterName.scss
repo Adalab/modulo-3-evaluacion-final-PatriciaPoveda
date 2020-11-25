@@ -1,5 +1,5 @@
 .filterCharacter__input {
-  width: 350px;
+  width: 270px;
   height: 35px;
   margin: 30px;
   border: rgb(26, 171, 182) solid 3px;
@@ -7,4 +7,7 @@
   font-size: 18px;
   outline: none;
   padding-left: 10px;
+  @media all and (min-width: 768px) {
+    width: 350px;
+  }
 }

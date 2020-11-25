@@ -4,6 +4,7 @@ import getApi from "../services/api";
 import CharacterList from "./CharacterList";
 import Header from "./Header";
 import Filters from "./Filters";
+import Landing from "./Landing";
 import CharacterDetail from "./CharacterDetail";
 import { Route, Switch } from "react-router-dom";
 
@@ -37,18 +38,19 @@ const App = () => {
   return (
     <>
       <Header></Header>
-      <main className="container">
-        <Switch>
-          <Route exact path="/">
+      <Switch>
+        <Route exact path="/" component={Landing}></Route>
+        <main className="container">
+          <Route path="/characters" component={(Filters, CharacterList)}>
             <Filters
               handleFilter={handleFilter}
               filterCharacters={filterCharacters}
             ></Filters>
             <CharacterList characters={filterPerson}></CharacterList>
           </Route>
-          <Route path="/character/:id" render={renderCharacterDetail}></Route>
-        </Switch>
-      </main>
+        </main>
+        <Route path="/character/:id" render={renderCharacterDetail}></Route>
+      </Switch>
     </>
   );
 };
