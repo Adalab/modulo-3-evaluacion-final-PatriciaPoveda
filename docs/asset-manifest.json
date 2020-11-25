@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.0ae2d6b4.chunk.css",
-    "main.js": "./static/js/main.3eccb206.chunk.js",
-    "main.js.map": "./static/js/main.3eccb206.chunk.js.map",
+    "main.css": "./static/css/main.5738621b.chunk.css",
+    "main.js": "./static/js/main.02f11d77.chunk.js",
+    "main.js.map": "./static/js/main.02f11d77.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.528ad5a7.js",
     "runtime-main.js.map": "./static/js/runtime-main.528ad5a7.js.map",
     "static/js/2.fb2c20f1.chunk.js": "./static/js/2.fb2c20f1.chunk.js",
     "static/js/2.fb2c20f1.chunk.js.map": "./static/js/2.fb2c20f1.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.0ae2d6b4.chunk.css.map": "./static/css/main.0ae2d6b4.chunk.css.map",
+    "static/css/main.5738621b.chunk.css.map": "./static/css/main.5738621b.chunk.css.map",
     "static/js/2.fb2c20f1.chunk.js.LICENSE.txt": "./static/js/2.fb2c20f1.chunk.js.LICENSE.txt",
     "static/media/Rick_and_Morty.de13d484.png": "./static/media/Rick_and_Morty.de13d484.png",
     "static/media/homero-simpson-400x360.073c84eb.jpg": "./static/media/homero-simpson-400x360.073c84eb.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.528ad5a7.js",
     "static/js/2.fb2c20f1.chunk.js",
-    "static/css/main.0ae2d6b4.chunk.css",
-    "static/js/main.3eccb206.chunk.js"
+    "static/css/main.5738621b.chunk.css",
+    "static/js/main.02f11d77.chunk.js"
   ]
 }
