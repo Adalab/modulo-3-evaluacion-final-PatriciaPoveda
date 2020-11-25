@@ -1,24 +1,30 @@
 import React from "react";
 import "./filterName.scss";
 
-const FiltersName = (props) => {
-  const handleChange = (ev) => {
+class FiltersName extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange = (ev) => {
     const inputValue = ev.target.value;
-    props.handleFilter(inputValue);
+    this.props.handleFilter(inputValue);
   };
-  return (
-    <>
-      <label htmlFor="nameCharacter"></label>
-      <input
-        type="text"
-        id="nameCharacter"
-        className="filterCharacter__input"
-        placeholder="Ej: Morty"
-        onChange={handleChange}
-        value={props.filterCharacters}
-      />
-    </>
-  );
-};
+  render() {
+    return (
+      <>
+        <label htmlFor="nameCharacter"></label>
+        <input
+          type="text"
+          id="nameCharacter"
+          className="filterCharacter__input"
+          placeholder="Ej: Morty"
+          onChange={this.handleChange}
+          value={this.props.filterCharacters}
+        />
+      </>
+    );
+  }
+}
 
 export default FiltersName;
