@@ -1,20 +1,16 @@
 import React from "react";
-import "./filters.scss";
+import FilterName from "./FilterName";
 
+const handleFormSubmit = (ev) => {
+  ev.preventDefault();
+};
 const Filters = (props) => {
-  const handleChange = (ev) => {
-    const inputValue = ev.target.value;
-    props.handleFilter(inputValue);
-  };
   return (
-    <form action="" className="filterCharacter">
-      <label htmlFor="nameCharacter"></label>
-      <input
-        type="text"
-        id="nameCharacter"
-        className="filterCharacter__input"
-        onChange={handleChange}
-      />
+    <form action="" className="filterCharacter" onSubmit={handleFormSubmit}>
+      <FilterName
+        handleFilter={props.handleFilter}
+        filterCharacters={props.filterCharacters}
+      ></FilterName>
     </form>
   );
 };

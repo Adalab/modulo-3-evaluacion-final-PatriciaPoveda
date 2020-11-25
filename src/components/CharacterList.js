@@ -5,11 +5,12 @@ import "./characterList.scss";
 const CharacterList = (props) => {
   const newCharacter = props.characters.map((character) => {
     return (
-      <li key={character.id}>
+      <li key={character.id} id={character.id}>
         <CharacterCard
           name={character.name}
           img={character.image}
           species={character.species}
+          id={character.id}
         />
       </li>
     );
