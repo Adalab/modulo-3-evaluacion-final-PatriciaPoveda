@@ -1,7 +1,7 @@
 import React from "react";
 import CharacterCard from "./CharacterCard";
+import CharacterListError from "./CharacterListError";
 import "./characterList.scss";
-import logo from "../images/homero-simpson-400x360.jpg";
 
 const CharacterList = (props) => {
   const newCharacter = props.characters.map((character) => {
@@ -19,10 +19,7 @@ const CharacterList = (props) => {
   return (
     <>
       {newCharacter.length === 0 ? (
-        <article className="filterError">
-          <img src={logo} alt="" className="filterError__img" />
-          <h3 className="filterError__text">Te has equivocado de personaje</h3>
-        </article>
+        <CharacterListError></CharacterListError>
       ) : (
         <ul className="characterList">{newCharacter}</ul>
       )}
