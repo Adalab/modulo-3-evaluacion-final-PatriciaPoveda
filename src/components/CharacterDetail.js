@@ -6,23 +6,33 @@ import logo from "../images/homero-simpson-400x360.jpg";
 const CharacterDetail = (props) => {
   if (props.foundCharacter === undefined) {
     return (
-      <Link to="/">
+      <>
+        <Link to="/" className="characterDetailButton">
+          Volver
+        </Link>
         <article className="characterDetail">
-          <img className="characterDetail__img" src={logo} alt="" />
+          <img
+            className="characterDetail__img"
+            src={logo}
+            alt="Imagen de Homer Simpson"
+          />
           <p className="characterDetail__text">
             Te has equivocado de personaje
           </p>
         </article>
-      </Link>
+      </>
     );
   } else {
     return (
-      <Link to="/">
+      <>
+        <Link to="/" className="characterDetailButton">
+          Volver
+        </Link>
         <article className="characterDetail">
           <img
             className="characterDetail__img"
             src={props.foundCharacter.image}
-            alt={`Imagen: ${props.foundCharacter.image}`}
+            alt={`Imagen: ${props.foundCharacter.name}`}
           />
           <section className="characterDetail__info">
             <h3 className="characterDetail__info--name">
@@ -36,7 +46,7 @@ const CharacterDetail = (props) => {
             </ul>
           </section>
         </article>
-      </Link>
+      </>
     );
   }
 };

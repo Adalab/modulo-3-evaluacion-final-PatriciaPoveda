@@ -1,26 +1,30 @@
+.characterDetailButton {
+  width: 500px;
+  height: 20px;
+  text-align: right;
+}
 .characterDetail {
   display: flex;
   justify-content: right;
   background-color: rgb(26, 171, 182);
   width: 500px;
   padding: 20px 0 20px 20px;
-  margin-top: 50px;
-}
-.characterDetail__img {
-  width: 200px;
-  height: 200px;
-}
-.characterDetail__info {
-  margin-left: 20px;
-  width: 200px;
-  height: 200px;
-  text-align: left;
-}
-.characterDetail__text {
-  margin-left: 20px;
-  width: 250px;
-  height: 200px;
-  text-align: center;
-  font-size: 25px;
-  padding: 30px;
+  &__img {
+    width: 200px;
+    height: 200px;
+  }
+  &__info {
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+  }
+  &__text {
+    margin-left: 20px;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+  }
 }

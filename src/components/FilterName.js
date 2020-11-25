@@ -13,6 +13,7 @@ const FiltersName = (props) => {
         type="text"
         id="nameCharacter"
         className="filterCharacter__input"
+        placeholder="Ej: Morty"
         onChange={handleChange}
         value={props.filterCharacters}
       />

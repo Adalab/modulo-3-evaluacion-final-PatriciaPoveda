@@ -26,6 +26,7 @@ const App = () => {
       .toUpperCase()
       .includes(filterCharacters.toUpperCase());
   });
+
   const renderCharacterDetail = (props) => {
     const foundId = parseInt(props.match.params.id);
     const foundCharacter = characters.find((character) => {

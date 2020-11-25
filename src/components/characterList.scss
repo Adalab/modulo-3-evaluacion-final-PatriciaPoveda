@@ -5,3 +5,16 @@
   grid-gap: 30px;
   padding-bottom: 30px;
 }
+.filterError {
+  margin: 60px;
+  display: flex;
+  background-color: rgb(26, 171, 182);
+  width: 600px;
+  &__img {
+    height: 250px;
+  }
+  &__text {
+    padding: 80px 40px 40px 40px;
+    font-size: 30px;
+  }
+}
