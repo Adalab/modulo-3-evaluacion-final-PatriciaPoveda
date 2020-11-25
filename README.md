@@ -4,7 +4,7 @@
 
 ## Información general
 
-He usado como librerías _React_ y _React Router_ para crear módulos y especificar rutas entre ellos. _npm_ como gestor de paquetes de dependencias. Para instalar las dependencias debe utilizarse el comando **npm install** y para lanzar la aplicación en local **npm start**. El preprocesador CSS que he usado es SCSS.
+He usado como librerías _React_ y _React Router_ para crear módulos y especificar rutas entre ellos, y _npm_ como gestor de paquetes de dependencias. Para instalar las dependencias debe utilizarse el comando **npm install** y para lanzar la aplicación en local **npm start**. El preprocesador *CSS* que he usado es *SCSS*.
 
 ### Enunciado
 
