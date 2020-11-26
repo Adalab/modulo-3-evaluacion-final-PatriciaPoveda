@@ -9,6 +9,7 @@ import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
+  const [select, setSelect] = useState("Alive");
   const [filterCharacters, setFilterCharacters] = useState("");
 
   useEffect(() => {
@@ -20,12 +21,19 @@ const App = () => {
   const handleFilter = (inputValue) => {
     setFilterCharacters(inputValue);
   };
+  const statusFilter = (newValue) => {
+    setSelect(newValue);
+  };
 
-  const filterPerson = characters.filter((character) => {
-    return character.name
-      .toUpperCase()
-      .includes(filterCharacters.toUpperCase());
-  });
+  const filterPerson = characters
+    .filter((character) => {
+      return character.name
+        .toUpperCase()
+        .includes(filterCharacters.toUpperCase());
+    })
+    .filter((character) => {
+      return character.status === select;
+    });
 
   const renderCharacterDetail = (props) => {
     const foundId = parseInt(props.match.params.id);
@@ -41,6 +49,7 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Filters
+              statusFilter={statusFilter}
               handleFilter={handleFilter}
               filterCharacters={filterCharacters}
             ></Filters>
