@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.5738621b.chunk.css",
-    "main.js": "./static/js/main.02f11d77.chunk.js",
-    "main.js.map": "./static/js/main.02f11d77.chunk.js.map",
+    "main.css": "./static/css/main.7ee1fcb9.chunk.css",
+    "main.js": "./static/js/main.9c2285d7.chunk.js",
+    "main.js.map": "./static/js/main.9c2285d7.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.528ad5a7.js",
     "runtime-main.js.map": "./static/js/runtime-main.528ad5a7.js.map",
-    "static/js/2.fb2c20f1.chunk.js": "./static/js/2.fb2c20f1.chunk.js",
-    "static/js/2.fb2c20f1.chunk.js.map": "./static/js/2.fb2c20f1.chunk.js.map",
+    "static/js/2.9e515ef8.chunk.js": "./static/js/2.9e515ef8.chunk.js",
+    "static/js/2.9e515ef8.chunk.js.map": "./static/js/2.9e515ef8.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.5738621b.chunk.css.map": "./static/css/main.5738621b.chunk.css.map",
-    "static/js/2.fb2c20f1.chunk.js.LICENSE.txt": "./static/js/2.fb2c20f1.chunk.js.LICENSE.txt",
+    "static/css/main.7ee1fcb9.chunk.css.map": "./static/css/main.7ee1fcb9.chunk.css.map",
+    "static/js/2.9e515ef8.chunk.js.LICENSE.txt": "./static/js/2.9e515ef8.chunk.js.LICENSE.txt",
+    "static/media/Dont-panic.05182951.jpg": "./static/media/Dont-panic.05182951.jpg",
     "static/media/Rick_and_Morty.de13d484.png": "./static/media/Rick_and_Morty.de13d484.png",
+    "static/media/landing.scss": "./static/media/background.88d25720.jpg",
     "static/media/homero-simpson-400x360.073c84eb.jpg": "./static/media/homero-simpson-400x360.073c84eb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.528ad5a7.js",
-    "static/js/2.fb2c20f1.chunk.js",
-    "static/css/main.5738621b.chunk.css",
-    "static/js/main.02f11d77.chunk.js"
+    "static/js/2.9e515ef8.chunk.js",
+    "static/css/main.7ee1fcb9.chunk.css",
+    "static/js/main.9c2285d7.chunk.js"
   ]
 }

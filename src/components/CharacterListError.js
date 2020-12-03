@@ -1,6 +1,6 @@
 import React from "react";
 import "./characterList.scss";
-import logo from "../images/homero-simpson-400x360.jpg";
+import logo from "../images/Dont-panic.jpg";
 
 const CharacterList = () => {
   return (

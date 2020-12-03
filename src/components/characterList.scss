@@ -14,10 +14,17 @@
   }
 }
 .filterError {
-  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
   display: flex;
   background-color: rgb(26, 171, 182);
-  width: 600px;
+  width: 250px;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 60px;
+    width: 600px;
+  }
   &__img {
     height: 250px;
   }

@@ -48,8 +48,8 @@ const App = () => {
             ></Filters>
             <CharacterList characters={filterPerson}></CharacterList>
           </Route>
+          <Route path="/character/:id" render={renderCharacterDetail}></Route>
         </main>
-        <Route path="/character/:id" render={renderCharacterDetail}></Route>
       </Switch>
     </>
   );

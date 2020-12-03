@@ -1,4 +1,24 @@
-// .wrapper {
-//   // background-color: blue;
-//   // background-image: url(../images/background.jpg);
-// }
+.landing {
+  // background-color: blue;
+  background-image: url(../images/background.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.landing__btn {
+  margin-top: 150px;
+  height: 60px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: rgb(26, 171, 182);
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 2;
+  outline: none;
+  &:hover {
+    background-color: rgb(20, 136, 145);
+    cursor: pointer;
+  }
+}
