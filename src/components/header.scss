@@ -1,11 +1,12 @@
 .headerLogo {
   // background-color: black;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: white solid 1px;
+  // border-bottom: white solid 1px;
+  width: 100vw;
   // position: fixed;
-  // z-index: -1;
+  z-index: 1;
   @media all and (min-width: 768px) {
     border-bottom: 0;
   }

@@ -9,7 +9,7 @@ const CharacterDetail = (props) => {
   } else {
     return (
       <>
-        <Link to="/characters" className="characterDetailButton">
+        <Link to="/character" className="characterDetailButton">
           Volver
         </Link>
         <article className="characterDetail">

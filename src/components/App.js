@@ -33,24 +33,30 @@ const App = () => {
     const foundCharacter = characters.find((character) => {
       return character.id === foundId;
     });
-    return <CharacterDetail foundCharacter={foundCharacter} />;
+    return (
+      <>
+        <Header></Header>
+        <CharacterDetail foundCharacter={foundCharacter}></CharacterDetail>
+      </>
+    );
   };
+
   return (
     <>
-      <Header></Header>
-      <Switch>
-        <Route exact path="/" component={Landing}></Route>
-        <main className="container">
-          <Route path="/characters" component={(Filters, CharacterList)}>
+      <main className="container">
+        <Switch>
+          <Route exact path="/" component={Landing}></Route>
+          <Route path="/character" component={(Filters, CharacterList)}>
+            <Header></Header>
             <Filters
               handleFilter={handleFilter}
               filterCharacters={filterCharacters}
             ></Filters>
             <CharacterList characters={filterPerson}></CharacterList>
           </Route>
-          <Route path="/character/:id" render={renderCharacterDetail}></Route>
-        </main>
-      </Switch>
+          <Route path="/person/:id" render={renderCharacterDetail}></Route>
+        </Switch>
+      </main>
     </>
   );
 };
