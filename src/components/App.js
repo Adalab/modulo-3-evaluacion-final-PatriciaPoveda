@@ -46,7 +46,7 @@ const App = () => {
       <main className="container">
         <Switch>
           <Route exact path="/" component={Landing}></Route>
-          <Route path="/character" component={(Filters, CharacterList)}>
+          <Route path="/characters" component={(Filters, CharacterList)}>
             <Header></Header>
             <Filters
               handleFilter={handleFilter}
@@ -54,7 +54,7 @@ const App = () => {
             ></Filters>
             <CharacterList characters={filterPerson}></CharacterList>
           </Route>
-          <Route path="/person/:id" render={renderCharacterDetail}></Route>
+          <Route path="/character/:id" render={renderCharacterDetail}></Route>
         </Switch>
       </main>
     </>

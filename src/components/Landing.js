@@ -5,7 +5,7 @@ import "./landing.scss";
 const Landing = () => {
   return (
     <main className="landing">
-      <Link to="/character" className="landing__btn">
+      <Link to="/characters" className="landing__btn">
         ENTRAR
       </Link>
     </main>
