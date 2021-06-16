@@ -2,8 +2,6 @@ import React from "react";
 import CharacterCard from "./CharacterCard";
 import CharacterListError from "./CharacterListError";
 
-import "./characterList.scss";
-
 const CharacterList = (props) => {
   props.characters.sort(function (a, b) {
     if (a.name > b.name) {

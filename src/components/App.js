@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.scss";
 import getApi from "../services/api";
 import CharacterList from "./CharacterList";
 import Header from "./Header";
@@ -11,6 +10,7 @@ import { Route, Switch } from "react-router-dom";
 const App = () => {
   const [characters, setCharacters] = useState([]);
   const [filterCharacters, setFilterCharacters] = useState("");
+  const [select, setSelect] = useState("Selecciona");
 
   useEffect(() => {
     getApi().then((data) => {
@@ -22,12 +22,23 @@ const App = () => {
     setFilterCharacters(inputValue);
   };
 
-  const filterPerson = characters.filter((character) => {
-    return character.name
-      .toUpperCase()
-      .includes(filterCharacters.toUpperCase());
-  });
+  const statusFilter = (newValue) => {
+    setSelect(newValue);
+  };
 
+  const filterPerson = characters
+    .filter((character) => {
+      return character.name
+        .toUpperCase()
+        .includes(filterCharacters.toUpperCase());
+    })
+    .filter((character) => {
+      if (character.status === select) {
+        return true;
+      } else if (select === "Selecciona") {
+        return characters;
+      }
+    });
   const renderCharacterDetail = (props) => {
     const foundId = parseInt(props.match.params.id);
     const foundCharacter = characters.find((character) => {
@@ -45,10 +56,14 @@ const App = () => {
     <>
       <main className="container">
         <Switch>
-          <Route exact path="/" component={Landing}></Route>
+          <Route exact path="/">
+            <Header></Header>
+            <Landing></Landing>
+          </Route>
           <Route path="/characters" component={(Filters, CharacterList)}>
             <Header></Header>
             <Filters
+              statusFilter={statusFilter}
               handleFilter={handleFilter}
               filterCharacters={filterCharacters}
             ></Filters>

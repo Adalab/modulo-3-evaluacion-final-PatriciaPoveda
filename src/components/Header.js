@@ -1,6 +1,5 @@
 import logo from "../images/Rick_and_Morty.png";
 import React from "react";
-import "./header.scss";
 
 const Header = () => {
   return (

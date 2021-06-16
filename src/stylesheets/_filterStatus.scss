@@ -1,0 +1,15 @@
+.status__label {
+  font-size: 20px;
+  margin: 20px;
+}
+.status__select {
+  width: 130px;
+  height: 30px;
+  color: black;
+  font-size: 18px;
+  border: rgb(26, 171, 182) solid 3px;
+  outline: none;
+  &--item {
+    color: black;
+  }
+}

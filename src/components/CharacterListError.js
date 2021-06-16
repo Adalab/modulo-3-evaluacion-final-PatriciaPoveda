@@ -1,5 +1,4 @@
 import React from "react";
-import "./characterList.scss";
 import logo from "../images/Dont-panic.jpg";
 
 const CharacterList = () => {
